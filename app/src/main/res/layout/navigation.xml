@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reletiv"
+
+    android:orientation="vertical"
+android:background="@color/pink"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <android.support.v4.widget.DrawerLayout
+     android:id="@+id/drawer"
+
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+
+
+
+
+         <android.support.v7.widget.Toolbar
+             android:gravity="top"
+
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+
+
+             >
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+
+                 <ImageView
+                     android:id="@+id/Imglogo"
+
+                     android:layout_width="?attr/actionBarSize"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/threepoint"></ImageView>
+                 <TextView
+
+
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Recorder"
+
+
+                     android:layout_centerVertical="true"
+
+                     > </TextView>
+             </RelativeLayout>
+         </android.support.v7.widget.Toolbar>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+         <ImageView
+             android:layout_marginTop="200dp"
+             android:id="@+id/micrecord"
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:layout_gravity="center"
+
+             app:srcCompat="@drawable/micc" />
+         <TextView
+             android:id="@+id/txttime"
+             android:layout_width="match_parent"
+             android:layout_marginTop="20dp"
+             android:layout_height="62dp"
+             android:layout_gravity="center"
+             android:gravity="center"
+
+             android:text="0:0"
+             android:textSize="36sp"></TextView>
+         <ImageView
+             android:id="@+id/imgrecord"
+             android:layout_width="match_parent"
+             android:layout_marginTop="20dp"
+             android:layout_gravity="center"
+             android:layout_height="48dp"
+
+             app:srcCompat="@drawable/record" />
+
+
+</LinearLayout>
+
+
+     <android.support.design.widget.NavigationView
+
+         android:id="@+id/navigation"
+         android:layout_width="wrap_content"
+         android:background="@color/pink"
+         android:layout_height="match_parent"
+         android:layout_gravity="right"
+         app:headerLayout="@layout/header"
+         android:layoutDirection="rtl"
+         app:menu="@menu/menu"
+
+
+
+         >
+
+
+     </android.support.design.widget.NavigationView>
+
+
+ </android.support.v4.widget.DrawerLayout>
+
+
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.hdodenhof.circleimageview.CircleImageView
+
+    android:src="@drawable/shape_color"
+    app:civ_border_width="1dp"
+    app:civ_border_color="#7B7B7B"
+    android:id="@+id/image_color"
+    android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+</de.hdodenhof.circleimageview.CircleImageView>

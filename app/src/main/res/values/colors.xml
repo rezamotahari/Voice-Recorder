@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#0B0B0B</color>
+    <color name="pink">#BB8FCE </color>
+
+    <color name="backgrond">#D2B4DE</color>
+
+    <color name="toolbar">#BB8FCE</color>
+    <color name="gray">#424242</color>
+
+    <color name="color2">#FFA07A</color>
+    <color name="blue">#2196F3</color>
+    <color name="orange">#E64A19</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="red">#FFC107</color>
+    <color name="brown">#8BC34A</color>
+    <color name="pink2">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="cyan">#00BCD4</color>
+
+</resources>

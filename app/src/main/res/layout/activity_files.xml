@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/filelinear"
+    
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lstfile"
+        android:layout_width="427dp"
+        android:layout_height="431dp"
+
+        android:layout_weight="0.5"
+        android:background="#BB8FCE"
+        android:cacheColorHint="#FDE2D8D8"
+        android:divider="#F1ECEC"
+        android:textColor="#111010">
+
+    </ListView>
+
+    <CheckBox
+        android:id="@+id/ch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="CheckBox" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_weight="0.1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtCurrentTime"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:text="00:00"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/imgplay"
+            android:layout_width="15dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            app:srcCompat="@drawable/playy" />
+
+        <ImageView
+            android:id="@+id/imgpause"
+            android:layout_width="15dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            app:srcCompat="@drawable/p" />
+
+        <ImageView
+            android:id="@+id/imgstop"
+            android:layout_width="15dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/stop" />
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="15dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            app:srcCompat="@drawable/edit_delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

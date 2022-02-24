@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink"
+    android:id="@+id/thiss"
+
+    android:layout_height="match_parent"
+    tools:context=".theme">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:text="لطفا تم مورد نظر را انتخاب کنید"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+          android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/pink"
+            app:civ_border_color="#000000"
+            android:id="@+id/pink"
+            android:layout_alignParentRight="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/colorPrimary"
+            app:civ_border_color="#000000"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/green"
+            android:layout_marginRight="20dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/gray"
+            app:civ_border_color="#000000"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/gray"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/color2"
+            app:civ_border_color="#000000"
+            android:id="@+id/color2"
+            android:layout_alignParentLeft="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/blue"
+            app:civ_border_color="#000000"
+            android:id="@+id/blue"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/orange"
+            app:civ_border_color="#000000"
+            android:id="@+id/orange"
+            android:layout_alignParentRight="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/red"
+            app:civ_border_color="#000000"
+            android:id="@+id/red"
+            android:layout_alignParentLeft="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/yellow"
+            app:civ_border_color="#000000"
+            android:id="@+id/yelow"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/brown"
+            app:civ_border_color="#000000"
+            android:id="@+id/brown"
+            android:layout_alignParentRight="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/pink2"
+            app:civ_border_color="#000000"
+            android:id="@+id/pink2"
+            android:layout_alignParentLeft="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/purple"
+            app:civ_border_color="#000000"
+            android:id="@+id/purple"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:src="@drawable/shape_color"
+
+
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/cyan"
+            app:civ_border_color="#000000"
+            android:id="@+id/cyan"
+            android:layout_alignParentRight="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
