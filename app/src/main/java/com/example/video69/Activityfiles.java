@@ -328,57 +328,9 @@ public class Activityfiles extends AppCompatActivity {
 
     public void changetheme() {
         SharedPreferences preferences = getSharedPreferences("theme", MODE_PRIVATE);
-        int color = preferences.getInt("color", 1);
-
-        if (color == 2) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary));
-
-        } else if (color == 1) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink));
-
-        } else if (color == 3) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.gray));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.gray));
-
-        } else if (color == 4) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.color2));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.color2));
-
-        } else if (color == 5) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.blue));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.blue));
-
-        } else if (color == 6) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.orange));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.orange));
-
-        } else if (color == 7) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.red));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.red));
-
-        } else if (color == 8) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.yellow));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.yellow));
-
-        } else if (color == 9) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.brown));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.brown));
-
-        } else if (color == 10) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink2));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink2));
-
-        } else if (color == 11) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.purple));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.purple));
-
-        } else if (color == 12) {
-            lstfile.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.cyan));
-            linearLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.cyan));
-
-        }
+        int color = preferences.getInt("color", R.color.colorPrimary);
+        lstfile.setBackgroundColor( getResources().getColor(color));
+        linearLayout.setBackgroundColor( getResources().getColor(color));
     }
 
 

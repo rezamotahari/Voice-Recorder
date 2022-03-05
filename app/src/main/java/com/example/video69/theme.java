@@ -1,5 +1,6 @@
 package com.example.video69;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -20,7 +21,7 @@ public class theme extends AppCompatActivity {
     CircleImageView pink,green, gray,color2,blue,orange,red,yellow,brown,pink2,purple,cyan;
     LinearLayout thiss;
 
-    public static int gg=1 ;
+    public static int gg=R.color.colorPrimary ;
 
 
     @Override
@@ -50,7 +51,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",2);
+                editor.putInt("color",R.color.colorPrimary);
                 editor.commit();
                 recreate();
             }
@@ -62,7 +63,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",1);
+                editor.putInt("color",R.color.pink);
                 editor.commit();
                 recreate();
             }
@@ -72,7 +73,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",3);
+                editor.putInt("color",R.color.gray);
                 editor.commit();
                 recreate();
 
@@ -83,7 +84,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",4);
+                editor.putInt("color",R.color.color2);
                 editor.commit();
                 recreate();
 
@@ -94,7 +95,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",5);
+                editor.putInt("color",R.color.blue);
                 editor.commit();
                 recreate();
 
@@ -105,7 +106,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",6);
+                editor.putInt("color",R.color.orange);
                 editor.commit();
                 recreate();
 
@@ -116,7 +117,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",7);
+                editor.putInt("color",R.color.red);
                 editor.commit();
                 recreate();
 
@@ -127,7 +128,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",8);
+                editor.putInt("color",R.color.yellow);
                 editor.commit();
                 recreate();
 
@@ -138,7 +139,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",9);
+                editor.putInt("color",R.color.brown);
                 editor.commit();
                 recreate();
 
@@ -149,7 +150,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",10);
+                editor.putInt("color",R.color.pink2);
                 editor.commit();
                 recreate();
 
@@ -160,7 +161,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",11);
+                editor.putInt("color",R.color.purple);
                 editor.commit();
                 recreate();
 
@@ -171,7 +172,7 @@ public class theme extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
                 SharedPreferences.Editor editor = changeTheme.edit();
-                editor.putInt("color",12);
+                editor.putInt("color",R.color.cyan);
                 editor.commit();
                 recreate();
 
@@ -180,122 +181,18 @@ public class theme extends AppCompatActivity {
     }
 
 
+
     public void getColor()
     {
         SharedPreferences changeTheme = getSharedPreferences("theme",MODE_PRIVATE);
 
-        int b=changeTheme.getInt("color",1);
+        int b=changeTheme.getInt("color",R.color.colorPrimary);
 
-        if (b==2)
-        {
-
-            gg =2;
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.colorPrimary));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.colorPrimary));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.colorPrimary));
-           thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.colorPrimary));
-
-        }
-        else if(b==1)
-        {
-            gg =1;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink));
-        }
-        else if(b==3)
-        {
-            gg =3;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.gray));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.gray));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.gray));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.gray));
-        }
-        else if(b==4)
-        {
-            gg =4;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.color2));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.color2));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.color2));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.color2));
-        }
-        else if(b==5)
-        {
-            gg =5;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.blue));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.blue));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.blue));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.blue));
-        }
-        else if(b==6)
-        {
-            gg =6;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.orange));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.orange));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.orange));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.orange));
-        }
-        else if(b==7)
-        {
-            gg =7;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.red));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.red));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.red));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.red));
-        }
-        else if(b==8)
-        {
-            gg =8;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.yellow));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.yellow));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.yellow));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.yellow));
-        }
-        else if(b==9)
-        {
-            gg =9;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.brown));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.brown));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.brown));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.brown));
-        }
-        else if(b==10)
-        {
-            gg =10;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink2));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink2));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink2));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.pink2));
-        }
-        else if(b==11)
-        {
-            gg =11;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.purple));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.purple));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.purple));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.purple));
-        }
-        else if(b==12)
-        {
-            gg =12;
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.cyan));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.cyan));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.cyan));
-            thiss.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.cyan));
-        }
-
+                    gg =b;
+            relativeLayout.setBackgroundColor(getResources().getColor(b));
+            drawerLayout.setBackgroundColor(getResources().getColor(b));
+            navigationView.setBackgroundColor(getResources().getColor(b));
+           thiss.setBackgroundColor(getResources().getColor(b));
 
     }
 

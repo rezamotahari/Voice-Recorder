@@ -299,70 +299,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changetheme() {
+
         SharedPreferences preferences = getSharedPreferences("theme", MODE_PRIVATE);
-        int s = preferences.getInt("color", 1);
-        if (s == 2) {
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary));
-        }
-
-        if (s == 1) {
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink));
-        } else if (s == 3) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.gray));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.gray));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.gray));
-
-        } else if (s == 4) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.color2));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.color2));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.color2));
-
-        } else if (s == 5) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.blue));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.blue));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.blue));
-        } else if (s == 6) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.orange));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.orange));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.orange));
-        } else if (s == 7) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.red));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.red));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.red));
-        } else if (s == 8) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.yellow));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.yellow));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.yellow));
-        } else if (s == 9) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.brown));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.brown));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.brown));
-        } else if (s == 10) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink2));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink2));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.pink2));
-        } else if (s == 11) {
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.purple));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.purple));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.purple));
-        } else if (s == 12) {
-
-            relativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.cyan));
-            drawerLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.cyan));
-            navigationView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.cyan));
-        }
+        int s = preferences.getInt("color", R.color.colorPrimary);
+        relativeLayout.setBackgroundColor(getResources().getColor(s));
+        drawerLayout.setBackgroundColor(getResources().getColor(s));
+        navigationView.setBackgroundColor(getResources().getColor(s));
 
     }
 
